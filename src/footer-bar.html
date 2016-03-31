@@ -1,12 +1,10 @@
 <template>
   <footer>
     <p>
-      <a href="#/home.html">Home</a> |
-      <a href="#/search">Search Recipes</a> |
-      <a href="/recipe.html">I feel lucky</a> |
-      <a href="/weeklyMenu.html">Weekly Menu</a> |
-      <a href="#/toprecipes">Top Recipes</a> |
-      <a href="#/contactus">Contact Us</a>
+        <template repeat.for="row of router.navigation">
+              <a href.bind="row.href">${row.title}</a>
+              <template if.bind="!$last">|</template>
+        </template>
     </p>
   </footer>
 </template>

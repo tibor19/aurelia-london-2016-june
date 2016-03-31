@@ -1,10 +1,13 @@
+import {inject} from 'aurelia-framework';
+
 import {RecipeService} from 'services/recipe-service';
 
+@inject(RecipeService)
 export class Recipe{
-    constructor(){
+    constructor(recipeService){
         // super();
         
-        this.recipeService = new RecipeService();
+        this.recipeService = recipeService;
     }
     
     activate(params){

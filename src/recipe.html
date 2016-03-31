@@ -1,7 +1,15 @@
 <template>
     <require from='./valueConverters'></require>
     <div>
-      <h2>${recipe.name}</h2>
+        <template if.bind="!isEditMode">
+            <h2>${recipe.name}</h2>
+            <button click.trigger="edit()">Edit</button>
+        </template>
+        <template if.bind="isEditMode">
+            <input type="text" value.bind="recipe.name" />
+            <button click.trigger="save(recipe)">Save</button>
+            
+        </template>
 
       <div class="box">
         <div class="box-content float-right">

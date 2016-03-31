@@ -14,4 +14,8 @@ export class RecipeService{
         return this.http.get('/data/recipe.json')
                         .then(r => r.content);
     }
+    
+    saveRecipe(recipe){
+        return this.http.put('/data/recipe.json', {data : recipe});
+    }
 }

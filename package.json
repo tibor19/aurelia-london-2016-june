@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-      "jspm": "^0.16.32"
+    "jspm": "^0.16.32"
   },
   "jspm": {
     "dependencies": {

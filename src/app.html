@@ -1,5 +1,6 @@
 <template>
     <require from='./home'></require>
+    <require from='./nav-bar.html'></require>
 <div class="container">
 
   <header>
@@ -8,30 +9,11 @@
     <h3>Random recipes</h3>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="/home.html">Home</a></li>
-      <li><a href="#/search">Search Recipes</a></li>
-      <li><a href="/recipe.html">I feel lucky</a></li>
-      <li><a href="/weeklyMenu.html">Weekly Menu</a></li>
-      <li><a href="#/toprecipes">Top recipes</a></li>
-      <li><a href="#/contactus">Contact Us</a></li>
-    </ul>
-  </nav>
-
+  <nav-bar></nav-bar>
   <article>
       <home></home>
   </article>
 
-  <footer>
-    <p>
-      <a href="#/home.html">Home</a> |
-      <a href="#/search">Search Recipes</a> |
-      <a href="/recipe.html">I feel lucky</a> |
-      <a href="/weeklyMenu.html">Weekly Menu</a> |
-      <a href="#/toprecipes">Top Recipes</a> |
-      <a href="#/contactus">Contact Us</a>
-    </p>
-  </footer>
+  <compose view='./footer-bar.html'></compose>
 </div>
 </template>

@@ -6,4 +6,9 @@ export class Recipe{
         
         this.recipe = recipe;
     }
+    
+    activate(params){
+        console.log(params);
+    }
+    
 }

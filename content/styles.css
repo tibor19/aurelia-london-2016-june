@@ -102,6 +102,10 @@ footer a:hover {
     text-decoration: none;
 }
 
+.active {
+    background-color: #fff;
+}
+
 .splash {
     text-align: center;
     margin: 10% 0 0 0;

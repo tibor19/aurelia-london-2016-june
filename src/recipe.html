@@ -22,7 +22,10 @@
       </div>
       <h3>Ingredients</h3>
       <ul class="ingredientsList">
-        <li repeat.for="ingredient of recipe.recipeIngredients">${ingredient.amount} ${ingredient.amountType} ${ingredient.ingredient.name}</li>
+        <template repeat.for="ingredient of recipe.recipeIngredients">
+            <li>${ingredient.amount} ${ingredient.amountType} ${ingredient.ingredient.name}</li>
+        </template>  
+        
       </ul>
       <h3>Instructions</h3>
       <ol>

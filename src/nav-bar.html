@@ -1,12 +1,9 @@
 <template>
   <nav>
     <ul>
-      <li><a href="/home.html">Home</a></li>
-      <li><a href="#/search">Search Recipes</a></li>
-      <li><a href="/recipe.html">I feel lucky</a></li>
-      <li><a href="/weeklyMenu.html">Weekly Menu</a></li>
-      <li><a href="#/toprecipes">Top recipes</a></li>
-      <li><a href="#/contactus">Contact Us</a></li>
+      <li class="${row.isActive ? 'active' : ''}" repeat.for="row of navRouter.navigation">
+          <a href.bind="row.href">${row.title}</a>
+      </li>
     </ul>
   </nav>
 </template>

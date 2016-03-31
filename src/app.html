@@ -1,6 +1,6 @@
 <template>
     <require from='./recipe'></require>
-    <require from='./nav-bar.html'></require>
+    <require from='./nav-bar'></require>
 <div class="container">
 
   <header>
@@ -9,9 +9,9 @@
     <h3>Random recipes</h3>
   </header>
 
-  <nav-bar></nav-bar>
+  <nav-bar nav-router.bind="router"></nav-bar>
   <article>
-      <recipe></recipe>
+      <router-view></router-view>
   </article>
 
   <compose view='./footer-bar.html'></compose>
